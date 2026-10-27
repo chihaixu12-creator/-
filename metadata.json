@@ -1,0 +1,6 @@
+{
+  "name": "ModaGPT AI Fashion Studio",
+  "description": "专业 AI 服装设计与商业视觉创作平台，统一聊天工作区、多工具编排与真实创作引擎。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

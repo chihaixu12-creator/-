@@ -1,0 +1,1059 @@
+{
+  "assets": [
+    {
+      "id": "asset-1793068715368-fg3jb",
+      "name": "虚拟试衣合成成品.png",
+      "type": "image",
+      "url": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+      "thumbnailUrl": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+      "createdAt": 1793068715369,
+      "sizeBytes": 61572,
+      "width": 1024,
+      "height": 1024,
+      "metadata": {
+        "tool": "virtual_tryon",
+        "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+        "version": 1,
+        "conversationId": "conv-init",
+        "taskId": "task-1793068711461"
+      }
+    },
+    {
+      "id": "asset-1793068686647-2d80d",
+      "name": "虚拟试衣合成成品.png",
+      "type": "image",
+      "url": "/storage/assets/asset-1793068686647-2d80d-________.png",
+      "thumbnailUrl": "/storage/assets/asset-1793068686647-2d80d-________.png",
+      "createdAt": 1793068686648,
+      "sizeBytes": 61572,
+      "width": 1024,
+      "height": 1024,
+      "metadata": {
+        "tool": "virtual_tryon",
+        "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+        "version": 1,
+        "conversationId": "conv-init",
+        "taskId": "task-1793068616322"
+      }
+    },
+    {
+      "id": "asset-1793068654113-fy4tc",
+      "name": "虚拟试衣合成成品.png",
+      "type": "image",
+      "url": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+      "thumbnailUrl": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+      "createdAt": 1793068654114,
+      "sizeBytes": 61572,
+      "width": 1024,
+      "height": 1024,
+      "metadata": {
+        "tool": "virtual_tryon",
+        "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+        "version": 1,
+        "conversationId": "conv-init",
+        "taskId": "task-1793068581001"
+      }
+    },
+    {
+      "id": "asset-1793068179010-0n03r",
+      "name": "精修调色_纯深黑 .png",
+      "type": "image",
+      "url": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+      "thumbnailUrl": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+      "createdAt": 1793068179011,
+      "sizeBytes": 27267,
+      "width": 1024,
+      "height": 1024,
+      "metadata": {
+        "tool": "image_refine_color",
+        "prompt": "高清精调色：重映射为纯深黑 (True Black)，锁定原图织物纹理",
+        "version": 2,
+        "conversationId": "conv-init",
+        "taskId": "task-1793068164329"
+      }
+    },
+    {
+      "id": "asset-1793068153777-yod69",
+      "name": "Moda_CAD服装制版规范图.png",
+      "type": "image",
+      "url": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+      "thumbnailUrl": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+      "createdAt": 1793068153779,
+      "sizeBytes": 29785,
+      "width": 1024,
+      "height": 1024,
+      "metadata": {
+        "tool": "fashion_design",
+        "prompt": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+        "version": 1,
+        "conversationId": "conv-init",
+        "taskId": "task-1793068151946",
+        "fabricAnalysis": {
+          "composition": "高支精纺双面呢羊毛",
+          "weight": "480g/m²",
+          "texture": "工业 CAD 级平纹规整结构"
+        }
+      }
+    }
+  ],
+  "tasks": {
+    "task-1793068151946": {
+      "id": "task-1793068151946",
+      "conversationId": "conv-init",
+      "userPrompt": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+      "status": "succeeded",
+      "steps": [
+        {
+          "id": "task-1793068151946-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[fashion_design]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068151946-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 100% Cashmere (Double-faced) | 克重: 550g/m² | 轮廓: Tailored H-line",
+          "durationMs": 1258
+        },
+        {
+          "id": "task-1793068151946-s3",
+          "title": "正在生成服装设计作品",
+          "status": "completed",
+          "tool": "fashion_design",
+          "details": "调度 [Moda 矢量制版与结构图算法 (Deterministic CAD)]，生成 1024x1024 高精成品 (29785 字节)",
+          "durationMs": 575
+        },
+        {
+          "id": "task-1793068151946-s-final",
+          "title": "已完成结果质检验收",
+          "status": "completed",
+          "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+          "durationMs": 250
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "fashion_design"
+      ],
+      "outputAssets": [
+        {
+          "id": "asset-1793068153777-yod69",
+          "name": "Moda_CAD服装制版规范图.png",
+          "type": "image",
+          "url": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+          "thumbnailUrl": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+          "createdAt": 1793068153779,
+          "sizeBytes": 29785,
+          "width": 1024,
+          "height": 1024,
+          "metadata": {
+            "tool": "fashion_design",
+            "prompt": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+            "version": 1,
+            "conversationId": "conv-init",
+            "taskId": "task-1793068151946",
+            "fabricAnalysis": {
+              "composition": "高支精纺双面呢羊毛",
+              "weight": "480g/m²",
+              "texture": "工业 CAD 级平纹规整结构"
+            }
+          }
+        }
+      ],
+      "createdAt": 1793068150779,
+      "completedAt": 1793068153779
+    },
+    "task-1793068164329": {
+      "id": "task-1793068164329",
+      "conversationId": "conv-init",
+      "userPrompt": "把这件大衣精调为纯黑色，保留所有面料纹理与纽扣细节",
+      "status": "succeeded",
+      "steps": [
+        {
+          "id": "task-1793068164329-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[image_refine_color]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068164329-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 100% Fine Merino Wool (High-density worsted wool) | 克重: 520g/m² (Heavyweight tailored coating) | 轮廓: Structured H-line, double-breasted tailored fit",
+          "durationMs": 14346
+        },
+        {
+          "id": "task-1793068164329-s3",
+          "title": "正在执行高保真色彩精调与纹理保留",
+          "status": "completed",
+          "tool": "image_refine_color",
+          "details": "重映射调色完成，生成物理文件并保留原始织物明暗纹理 (27267 字节)",
+          "durationMs": 336
+        },
+        {
+          "id": "task-1793068164329-s-final",
+          "title": "已完成结果质检验收",
+          "status": "completed",
+          "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+          "durationMs": 250
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "image_refine_color"
+      ],
+      "outputAssets": [
+        {
+          "id": "asset-1793068179010-0n03r",
+          "name": "精修调色_纯深黑 .png",
+          "type": "image",
+          "url": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+          "thumbnailUrl": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+          "createdAt": 1793068179011,
+          "sizeBytes": 27267,
+          "width": 1024,
+          "height": 1024,
+          "metadata": {
+            "tool": "image_refine_color",
+            "prompt": "高清精调色：重映射为纯深黑 (True Black)，锁定原图织物纹理",
+            "version": 2,
+            "conversationId": "conv-init",
+            "taskId": "task-1793068164329"
+          }
+        }
+      ],
+      "createdAt": 1793068176012,
+      "completedAt": 1793068179012
+    },
+    "task-1793068185458": {
+      "id": "task-1793068185458",
+      "conversationId": "conv-init",
+      "userPrompt": "换衣试穿测试",
+      "status": "waiting_for_input",
+      "steps": [
+        {
+          "id": "task-1793068185458-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068185458-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 90% Virgin Wool, 10% Cashmere | 克重: 650g/m² | 轮廓: H-line, structured shoulders",
+          "durationMs": 4851
+        },
+        {
+          "id": "task-1793068185458-s3",
+          "title": "等待补充试衣必要素材",
+          "status": "failed",
+          "tool": "virtual_tryon",
+          "details": "虚拟试衣需要 2 张素材（1 张人物照 + 1 张服装平铺图）。请在下方上传后重新提交。",
+          "durationMs": 120
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis"
+      ],
+      "outputAssets": [],
+      "createdAt": 1793068187309,
+      "completedAt": 1793068190309
+    },
+    "task-1793068196334": {
+      "id": "task-1793068196334",
+      "conversationId": "conv-init",
+      "userPrompt": "制作一段8秒走秀视频",
+      "status": "failed",
+      "steps": [
+        {
+          "id": "task-1793068196334-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[runway_video]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068196334-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 定制羊毛羊绒混纺 | 克重: 460g/m² | 轮廓: 标准商业廓形",
+          "durationMs": 550
+        },
+        {
+          "id": "task-1793068196334-s3",
+          "title": "走秀视频服务接入校验",
+          "status": "failed",
+          "tool": "runway_video",
+          "details": "Veo 2.0 走秀视频服务未接入/未授权：当前 GCP 环境仅配置了通用 API Key，缺少 gemini-omni-1.1-flash 或 Veo 2.0 商业视频生成专有配额。平台严格禁止使用预制虚假视频冒充生成结果，已如实阻断并报告缺失条件。",
+          "durationMs": 280
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "runway_video"
+      ],
+      "outputAssets": [],
+      "createdAt": 1793068193884,
+      "completedAt": 1793068196884
+    },
+    "task-1793068581001": {
+      "id": "task-1793068581001",
+      "conversationId": "conv-init",
+      "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+      "status": "succeeded",
+      "steps": [
+        {
+          "id": "task-1793068581001-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068581001-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 100% Fine Merino Wool (High-density worsted wool) | 克重: 520g/m² | 轮廓: H-line, tailored longline coat",
+          "durationMs": 72770
+        },
+        {
+          "id": "task-1793068581001-s3",
+          "title": "正在进行多层服装虚拟试衣合成",
+          "status": "completed",
+          "tool": "virtual_tryon",
+          "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+          "durationMs": 343
+        },
+        {
+          "id": "task-1793068581001-s-final",
+          "title": "已完成结果质检验收",
+          "status": "completed",
+          "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+          "durationMs": 250
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "virtual_tryon"
+      ],
+      "outputAssets": [
+        {
+          "id": "asset-1793068654113-fy4tc",
+          "name": "虚拟试衣合成成品.png",
+          "type": "image",
+          "url": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+          "thumbnailUrl": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+          "createdAt": 1793068654114,
+          "sizeBytes": 61572,
+          "width": 1024,
+          "height": 1024,
+          "metadata": {
+            "tool": "virtual_tryon",
+            "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+            "version": 1,
+            "conversationId": "conv-init",
+            "taskId": "task-1793068581001"
+          }
+        }
+      ],
+      "createdAt": 1793068651115,
+      "completedAt": 1793068654115
+    },
+    "task-1793068616322": {
+      "id": "task-1793068616322",
+      "conversationId": "conv-init",
+      "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+      "status": "succeeded",
+      "steps": [
+        {
+          "id": "task-1793068616322-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068616322-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 100% Fine Merino Wool (High-twist worsted wool) | 克重: 450g/m² | 轮廓: H-line, structured oversized fit",
+          "durationMs": 69999
+        },
+        {
+          "id": "task-1793068616322-s3",
+          "title": "正在进行多层服装虚拟试衣合成",
+          "status": "completed",
+          "tool": "virtual_tryon",
+          "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+          "durationMs": 328
+        },
+        {
+          "id": "task-1793068616322-s-final",
+          "title": "已完成结果质检验收",
+          "status": "completed",
+          "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+          "durationMs": 250
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "virtual_tryon"
+      ],
+      "outputAssets": [
+        {
+          "id": "asset-1793068686647-2d80d",
+          "name": "虚拟试衣合成成品.png",
+          "type": "image",
+          "url": "/storage/assets/asset-1793068686647-2d80d-________.png",
+          "thumbnailUrl": "/storage/assets/asset-1793068686647-2d80d-________.png",
+          "createdAt": 1793068686648,
+          "sizeBytes": 61572,
+          "width": 1024,
+          "height": 1024,
+          "metadata": {
+            "tool": "virtual_tryon",
+            "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+            "version": 1,
+            "conversationId": "conv-init",
+            "taskId": "task-1793068616322"
+          }
+        }
+      ],
+      "createdAt": 1793068683649,
+      "completedAt": 1793068686649
+    },
+    "task-1793068711461": {
+      "id": "task-1793068711461",
+      "conversationId": "conv-init",
+      "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+      "status": "succeeded",
+      "steps": [
+        {
+          "id": "task-1793068711461-s1",
+          "title": "正在理解创作需求",
+          "status": "completed",
+          "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+          "durationMs": 380
+        },
+        {
+          "id": "task-1793068711461-s2",
+          "title": "正在处理素材与面料结构",
+          "status": "completed",
+          "tool": "garment_analysis",
+          "details": "成分: 定制羊毛羊绒混纺 | 克重: 460g/m² | 轮廓: 标准商业廓形",
+          "durationMs": 3504
+        },
+        {
+          "id": "task-1793068711461-s3",
+          "title": "正在进行多层服装虚拟试衣合成",
+          "status": "completed",
+          "tool": "virtual_tryon",
+          "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+          "durationMs": 406
+        },
+        {
+          "id": "task-1793068711461-s-final",
+          "title": "已完成结果质检验收",
+          "status": "completed",
+          "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+          "durationMs": 250
+        }
+      ],
+      "toolsCalled": [
+        "garment_analysis",
+        "virtual_tryon"
+      ],
+      "outputAssets": [
+        {
+          "id": "asset-1793068715368-fg3jb",
+          "name": "虚拟试衣合成成品.png",
+          "type": "image",
+          "url": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+          "thumbnailUrl": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+          "createdAt": 1793068715369,
+          "sizeBytes": 61572,
+          "width": 1024,
+          "height": 1024,
+          "metadata": {
+            "tool": "virtual_tryon",
+            "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+            "version": 1,
+            "conversationId": "conv-init",
+            "taskId": "task-1793068711461"
+          }
+        }
+      ],
+      "createdAt": 1793068712371,
+      "completedAt": 1793068715371
+    }
+  },
+  "conversations": [
+    {
+      "id": "conv-init",
+      "title": "ModaGPT 生产级创作空间",
+      "createdAt": 1793068148119,
+      "updatedAt": 1793068715373,
+      "messageCount": 14
+    }
+  ],
+  "messages": {
+    "conv-init": [
+      {
+        "id": "msg-1793068153779-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+        "attachments": [],
+        "createdAt": 1793068150779
+      },
+      {
+        "id": "msg-1793068153779-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "已根据您的需求完成服装创作（执行引擎：Moda 矢量制版与结构图算法 (Deterministic CAD)）。作品已生成并同步归档至素材库，您可直接下载原文件或进行后续精修。",
+        "taskId": "task-1793068151946",
+        "taskRecord": {
+          "id": "task-1793068151946",
+          "conversationId": "conv-init",
+          "userPrompt": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+          "status": "succeeded",
+          "steps": [
+            {
+              "id": "task-1793068151946-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[fashion_design]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068151946-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 100% Cashmere (Double-faced) | 克重: 550g/m² | 轮廓: Tailored H-line",
+              "durationMs": 1258
+            },
+            {
+              "id": "task-1793068151946-s3",
+              "title": "正在生成服装设计作品",
+              "status": "completed",
+              "tool": "fashion_design",
+              "details": "调度 [Moda 矢量制版与结构图算法 (Deterministic CAD)]，生成 1024x1024 高精成品 (29785 字节)",
+              "durationMs": 575
+            },
+            {
+              "id": "task-1793068151946-s-final",
+              "title": "已完成结果质检验收",
+              "status": "completed",
+              "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+              "durationMs": 250
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "fashion_design"
+          ],
+          "outputAssets": [
+            {
+              "id": "asset-1793068153777-yod69",
+              "name": "Moda_CAD服装制版规范图.png",
+              "type": "image",
+              "url": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+              "thumbnailUrl": "/storage/assets/asset-1793068153777-yod69-Moda_CAD_______.png",
+              "createdAt": 1793068153779,
+              "sizeBytes": 29785,
+              "width": 1024,
+              "height": 1024,
+              "metadata": {
+                "tool": "fashion_design",
+                "prompt": "请设计一款双排扣极简羊绒大衣，燕麦色，大翻领设计",
+                "version": 1,
+                "conversationId": "conv-init",
+                "taskId": "task-1793068151946",
+                "fabricAnalysis": {
+                  "composition": "高支精纺双面呢羊毛",
+                  "weight": "480g/m²",
+                  "texture": "工业 CAD 级平纹规整结构"
+                }
+              }
+            }
+          ],
+          "createdAt": 1793068150779,
+          "completedAt": 1793068153779
+        },
+        "createdAt": 1793068153779
+      },
+      {
+        "id": "msg-1793068179012-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "把这件大衣精调为纯黑色，保留所有面料纹理与纽扣细节",
+        "attachments": [
+          "data:image/png;base64,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"
+        ],
+        "createdAt": 1793068176012
+      },
+      {
+        "id": "msg-1793068179012-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "已完成高清色彩精调。面料原始编织纹理与明暗高光已被精准锁定，未发生轮廓形变，原文件已保存至素材库。",
+        "taskId": "task-1793068164329",
+        "taskRecord": {
+          "id": "task-1793068164329",
+          "conversationId": "conv-init",
+          "userPrompt": "把这件大衣精调为纯黑色，保留所有面料纹理与纽扣细节",
+          "status": "succeeded",
+          "steps": [
+            {
+              "id": "task-1793068164329-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[image_refine_color]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068164329-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 100% Fine Merino Wool (High-density worsted wool) | 克重: 520g/m² (Heavyweight tailored coating) | 轮廓: Structured H-line, double-breasted tailored fit",
+              "durationMs": 14346
+            },
+            {
+              "id": "task-1793068164329-s3",
+              "title": "正在执行高保真色彩精调与纹理保留",
+              "status": "completed",
+              "tool": "image_refine_color",
+              "details": "重映射调色完成，生成物理文件并保留原始织物明暗纹理 (27267 字节)",
+              "durationMs": 336
+            },
+            {
+              "id": "task-1793068164329-s-final",
+              "title": "已完成结果质检验收",
+              "status": "completed",
+              "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+              "durationMs": 250
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "image_refine_color"
+          ],
+          "outputAssets": [
+            {
+              "id": "asset-1793068179010-0n03r",
+              "name": "精修调色_纯深黑 .png",
+              "type": "image",
+              "url": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+              "thumbnailUrl": "/storage/assets/asset-1793068179010-0n03r-_________.png",
+              "createdAt": 1793068179011,
+              "sizeBytes": 27267,
+              "width": 1024,
+              "height": 1024,
+              "metadata": {
+                "tool": "image_refine_color",
+                "prompt": "高清精调色：重映射为纯深黑 (True Black)，锁定原图织物纹理",
+                "version": 2,
+                "conversationId": "conv-init",
+                "taskId": "task-1793068164329"
+              }
+            }
+          ],
+          "createdAt": 1793068176012,
+          "completedAt": 1793068179012
+        },
+        "createdAt": 1793068179012
+      },
+      {
+        "id": "msg-1793068190310-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "换衣试穿测试",
+        "attachments": [],
+        "createdAt": 1793068187310
+      },
+      {
+        "id": "msg-1793068190310-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "虚拟试衣任务需要两张必要素材：请同时上传【人物全身照】与【服装单品图】，系统将自动进行人物姿势锚定与服装多层自适应贴合。",
+        "taskId": "task-1793068185458",
+        "taskRecord": {
+          "id": "task-1793068185458",
+          "conversationId": "conv-init",
+          "userPrompt": "换衣试穿测试",
+          "status": "waiting_for_input",
+          "steps": [
+            {
+              "id": "task-1793068185458-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068185458-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 90% Virgin Wool, 10% Cashmere | 克重: 650g/m² | 轮廓: H-line, structured shoulders",
+              "durationMs": 4851
+            },
+            {
+              "id": "task-1793068185458-s3",
+              "title": "等待补充试衣必要素材",
+              "status": "failed",
+              "tool": "virtual_tryon",
+              "details": "虚拟试衣需要 2 张素材（1 张人物照 + 1 张服装平铺图）。请在下方上传后重新提交。",
+              "durationMs": 120
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis"
+          ],
+          "outputAssets": [],
+          "createdAt": 1793068187309,
+          "completedAt": 1793068190309
+        },
+        "createdAt": 1793068190310
+      },
+      {
+        "id": "msg-1793068196885-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "制作一段8秒走秀视频",
+        "attachments": [],
+        "createdAt": 1793068193885
+      },
+      {
+        "id": "msg-1793068196885-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "走秀视频生成阻断说明：Veo 2.0 走秀视频服务未接入/未授权：当前 GCP 环境仅配置了通用 API Key，缺少 gemini-omni-1.1-flash 或 Veo 2.0 商业视频生成专有配额。平台严格禁止使用预制虚假视频冒充生成结果，已如实阻断并报告缺失条件。",
+        "taskId": "task-1793068196334",
+        "taskRecord": {
+          "id": "task-1793068196334",
+          "conversationId": "conv-init",
+          "userPrompt": "制作一段8秒走秀视频",
+          "status": "failed",
+          "steps": [
+            {
+              "id": "task-1793068196334-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[runway_video]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068196334-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 定制羊毛羊绒混纺 | 克重: 460g/m² | 轮廓: 标准商业廓形",
+              "durationMs": 550
+            },
+            {
+              "id": "task-1793068196334-s3",
+              "title": "走秀视频服务接入校验",
+              "status": "failed",
+              "tool": "runway_video",
+              "details": "Veo 2.0 走秀视频服务未接入/未授权：当前 GCP 环境仅配置了通用 API Key，缺少 gemini-omni-1.1-flash 或 Veo 2.0 商业视频生成专有配额。平台严格禁止使用预制虚假视频冒充生成结果，已如实阻断并报告缺失条件。",
+              "durationMs": 280
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "runway_video"
+          ],
+          "outputAssets": [],
+          "createdAt": 1793068193884,
+          "completedAt": 1793068196884
+        },
+        "createdAt": 1793068196885
+      },
+      {
+        "id": "msg-1793068654117-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+        "attachments": [],
+        "createdAt": 1793068651117
+      },
+      {
+        "id": "msg-1793068654117-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "已完成虚拟试穿合成。算法自适应贴合了人物身型轮廓与肩线结构，完好保留了原服装领型、扣眼细节与自然垂褶。",
+        "taskId": "task-1793068581001",
+        "taskRecord": {
+          "id": "task-1793068581001",
+          "conversationId": "conv-init",
+          "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+          "status": "succeeded",
+          "steps": [
+            {
+              "id": "task-1793068581001-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068581001-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 100% Fine Merino Wool (High-density worsted wool) | 克重: 520g/m² | 轮廓: H-line, tailored longline coat",
+              "durationMs": 72770
+            },
+            {
+              "id": "task-1793068581001-s3",
+              "title": "正在进行多层服装虚拟试衣合成",
+              "status": "completed",
+              "tool": "virtual_tryon",
+              "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+              "durationMs": 343
+            },
+            {
+              "id": "task-1793068581001-s-final",
+              "title": "已完成结果质检验收",
+              "status": "completed",
+              "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+              "durationMs": 250
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "virtual_tryon"
+          ],
+          "outputAssets": [
+            {
+              "id": "asset-1793068654113-fy4tc",
+              "name": "虚拟试衣合成成品.png",
+              "type": "image",
+              "url": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+              "thumbnailUrl": "/storage/assets/asset-1793068654113-fy4tc-________.png",
+              "createdAt": 1793068654114,
+              "sizeBytes": 61572,
+              "width": 1024,
+              "height": 1024,
+              "metadata": {
+                "tool": "virtual_tryon",
+                "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+                "version": 1,
+                "conversationId": "conv-init",
+                "taskId": "task-1793068581001"
+              }
+            }
+          ],
+          "createdAt": 1793068651115,
+          "completedAt": 1793068654115
+        },
+        "createdAt": 1793068654117
+      },
+      {
+        "id": "msg-1793068686649-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+        "attachments": [],
+        "createdAt": 1793068683649
+      },
+      {
+        "id": "msg-1793068686649-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "已完成虚拟试穿合成。算法自适应贴合了人物身型轮廓与肩线结构，完好保留了原服装领型、扣眼细节与自然垂褶。",
+        "taskId": "task-1793068616322",
+        "taskRecord": {
+          "id": "task-1793068616322",
+          "conversationId": "conv-init",
+          "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+          "status": "succeeded",
+          "steps": [
+            {
+              "id": "task-1793068616322-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068616322-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 100% Fine Merino Wool (High-twist worsted wool) | 克重: 450g/m² | 轮廓: H-line, structured oversized fit",
+              "durationMs": 69999
+            },
+            {
+              "id": "task-1793068616322-s3",
+              "title": "正在进行多层服装虚拟试衣合成",
+              "status": "completed",
+              "tool": "virtual_tryon",
+              "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+              "durationMs": 328
+            },
+            {
+              "id": "task-1793068616322-s-final",
+              "title": "已完成结果质检验收",
+              "status": "completed",
+              "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+              "durationMs": 250
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "virtual_tryon"
+          ],
+          "outputAssets": [
+            {
+              "id": "asset-1793068686647-2d80d",
+              "name": "虚拟试衣合成成品.png",
+              "type": "image",
+              "url": "/storage/assets/asset-1793068686647-2d80d-________.png",
+              "thumbnailUrl": "/storage/assets/asset-1793068686647-2d80d-________.png",
+              "createdAt": 1793068686648,
+              "sizeBytes": 61572,
+              "width": 1024,
+              "height": 1024,
+              "metadata": {
+                "tool": "virtual_tryon",
+                "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+                "version": 1,
+                "conversationId": "conv-init",
+                "taskId": "task-1793068616322"
+              }
+            }
+          ],
+          "createdAt": 1793068683649,
+          "completedAt": 1793068686649
+        },
+        "createdAt": 1793068686649
+      },
+      {
+        "id": "msg-1793068715372-user",
+        "conversationId": "conv-init",
+        "role": "user",
+        "content": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+        "attachments": [],
+        "createdAt": 1793068712372
+      },
+      {
+        "id": "msg-1793068715372-assistant",
+        "conversationId": "conv-init",
+        "role": "assistant",
+        "content": "已完成虚拟试穿合成。算法自适应贴合了人物身型轮廓与肩线结构，完好保留了原服装领型、扣眼细节与自然垂褶。",
+        "taskId": "task-1793068711461",
+        "taskRecord": {
+          "id": "task-1793068711461",
+          "conversationId": "conv-init",
+          "userPrompt": "让模特穿上这件衣服，保持人物脸部、姿势和背景自然，尽可能保留原始服装纹理。",
+          "status": "succeeded",
+          "steps": [
+            {
+              "id": "task-1793068711461-s1",
+              "title": "正在理解创作需求",
+              "status": "completed",
+              "details": "分析命令意图：[virtual_tryon]，提取材质、版型、构图与约束条件",
+              "durationMs": 380
+            },
+            {
+              "id": "task-1793068711461-s2",
+              "title": "正在处理素材与面料结构",
+              "status": "completed",
+              "tool": "garment_analysis",
+              "details": "成分: 定制羊毛羊绒混纺 | 克重: 460g/m² | 轮廓: 标准商业廓形",
+              "durationMs": 3504
+            },
+            {
+              "id": "task-1793068711461-s3",
+              "title": "正在进行多层服装虚拟试衣合成",
+              "status": "completed",
+              "tool": "virtual_tryon",
+              "details": "已完成自适应几何贴合与 Alpha 多层融合，生成高保真试穿图",
+              "durationMs": 406
+            },
+            {
+              "id": "task-1793068711461-s-final",
+              "title": "已完成结果质检验收",
+              "status": "completed",
+              "details": "物理文件已保存至本地对象存储，元数据已写入数据库",
+              "durationMs": 250
+            }
+          ],
+          "toolsCalled": [
+            "garment_analysis",
+            "virtual_tryon"
+          ],
+          "outputAssets": [
+            {
+              "id": "asset-1793068715368-fg3jb",
+              "name": "虚拟试衣合成成品.png",
+              "type": "image",
+              "url": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+              "thumbnailUrl": "/storage/assets/asset-1793068715368-fg3jb-________.png",
+              "createdAt": 1793068715369,
+              "sizeBytes": 61572,
+              "width": 1024,
+              "height": 1024,
+              "metadata": {
+                "tool": "virtual_tryon",
+                "prompt": "虚拟试衣：人物与服装多层自适应融合合成",
+                "version": 1,
+                "conversationId": "conv-init",
+                "taskId": "task-1793068711461"
+              }
+            }
+          ],
+          "createdAt": 1793068712371,
+          "completedAt": 1793068715371
+        },
+        "createdAt": 1793068715372
+      }
+    ]
+  },
+  "settings": {
+    "userName": "Moda Designer",
+    "email": "fsososocc@gmail.com",
+    "language": "zh-CN",
+    "region": "中国 / 亚太",
+    "emailNotifications": true,
+    "twoFactorAuth": false,
+    "quotaRemaining": 840,
+    "quotaTotal": 1000,
+    "planName": "商业高级版 (Commercial Pro)",
+    "providers": [
+      {
+        "name": "Google GenAI (Gemini 3.1 / 3.8)",
+        "status": "connected",
+        "model": "gemini-3.1-flash-lite",
+        "quotaUsed": 160
+      },
+      {
+        "name": "Moda Precision Deterministic Engine",
+        "status": "connected",
+        "model": "Sharp-V2-Engine",
+        "quotaUsed": 88
+      },
+      {
+        "name": "Veo Runway Video Engine",
+        "status": "unconnected",
+        "model": "veo-2.0-preview (待授权)",
+        "quotaUsed": 0
+      }
+    ]
+  }
+}

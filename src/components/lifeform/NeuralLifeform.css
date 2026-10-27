@@ -1,0 +1,29 @@
+.neural-lifeform {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  min-width: 0;
+  overflow: hidden;
+  background: transparent;
+  isolation: isolate;
+}
+
+.neural-lifeform canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  touch-action: pan-y;
+}
+
+@media (max-width: 600px) {
+  .neural-lifeform {
+    height: 290px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neural-lifeform {
+    animation: none;
+  }
+}
